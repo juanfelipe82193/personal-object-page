@@ -1,0 +1,133 @@
+<mvc:View 
+	xmlns:f="sap.f" 
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.uxap"
+	xmlns:m="sap.m"
+	xmlns:core="sap.ui.core"
+	xmlns:goals="sap.uxap.sample.SharedBlocks.goals"
+	xmlns:personal="sap.uxap.sample.SharedBlocks.personal"
+	xmlns:employment="sap.uxap.sample.SharedBlocks.employment"
+	height="100%">
+
+	<ObjectPageLayout id="ObjectPageLayout"
+		showTitleInHeaderContent="true"
+		upperCaseAnchorBar="false"
+		enableLazyLoading="true"
+		useIconTabBar="false">
+		<headerTitle>
+			<ObjectPageDynamicHeaderTitle>
+				<expandedHeading>
+					<m:Title text="Juan Felipe Zorrilla" wrapping="true" />
+				</expandedHeading>
+
+				<snappedHeading>
+					<m:HBox>
+						<m:VBox>
+							<f:Avatar src="../images/imageID_275314.png" class="sapUiSmallMarginEnd"/>
+							<!-- <m:Avatar src="./test-resources/sap/uxap/images/imageID_275314.png" class="sapUiSmallMarginEnd" /> -->
+						</m:VBox>
+
+						<m:VBox>
+							<m:Title text="Juan Felipe Zorrilla" wrapping="true"/>
+							<m:Text text="Senior SAP Consultant - UX/UI specialist" class="sapUiSmallMarginBottom"/>
+						</m:VBox>
+					</m:HBox>
+				</snappedHeading>
+
+				<expandedContent>
+					<m:Text text="Senior SAP Consultant - UX/UI specialist"/>
+				</expandedContent>
+
+				<snappedTitleOnMobile>
+					<m:Title text="Juan Felipe Zorrilla"/>
+				</snappedTitleOnMobile>
+
+				<actions>
+					<ObjectPageHeaderActionButton icon="sap-icon://search" type="Transparent"/>
+					<ObjectPageHeaderActionButton icon="sap-icon://bell" type="Transparent"/>
+					<ObjectPageHeaderActionButton icon="sap-icon://employee" type="Transparent"/>
+				</actions>
+			</ObjectPageDynamicHeaderTitle>
+		</headerTitle>
+
+		<headerContent>
+			<m:FlexBox wrap="Wrap" fitContainer="true">
+				<!-- <m:Avatar src="./test-resources/sap/uxap/images/imageID_275314.png" class="sapUiMediumMarginEnd sapUiSmallMarginBottom" displaySize="L"/> -->
+				<f:Avatar src="../images/imageID_275314.png" class="sapUiMediumMarginEnd sapUiSmallMarginBottom" displaySize="L"/>
+
+				<m:VBox class="sapUiLargeMarginEnd sapUiSmallMarginBottom">
+					<m:Title text="Contact Information" class="sapUiTinyMarginBottom" />
+
+					<m:HBox class="sapUiTinyMarginBottom">
+						<core:Icon src="sap-icon://factory"/>
+						<m:Text text="LafargeHolcim" class="sapUiSmallMarginBegin"/>
+					</m:HBox>
+
+					<m:HBox class="sapUiTinyMarginBottom">
+						<core:Icon src="sap-icon://outgoing-call"/>
+						<m:Text text=" +57 316 830 7283" class="sapUiSmallMarginBegin"/>
+					</m:HBox>
+
+					<m:HBox class="sapUiTinyMarginBottom">
+						<core:Icon src="sap-icon://email"/>
+						<m:Link text="juan19_93@hotmail.com" class="sapUiSmallMarginBegin"/>
+					</m:HBox>
+
+					<m:HBox>
+						<core:Icon src="sap-icon://syntax"/>
+						<m:Link text="https://github.com/juanfelipe82193" class="sapUiSmallMarginBegin"/>
+					</m:HBox>
+				</m:VBox>
+
+				<m:VBox class="sapUiLargeMarginEnd sapUiSmallMarginBottom">
+					<m:Title text="About Me" class="sapUiTinyMarginBottom" />
+					<m:Text 
+						wrappingType="Hyphenated" 
+						wrapping="true" 
+						textAlign="Left" 
+						width="320px" 
+						text="Industrial Engineer, Bilingual. With 4 years of job experience mostly focused on implementing enterprise software solutions and supporting applications for SAP based on Human Capital Management and Multiresource Scheduling. Within the last 2 years, I have worked in a globally distributed team located remotely in different countries (US and India) and working with stakeholders at all levels supporting the business to re-engineering and enhance their processes. Also, In the last year I’ve my spare time to study everything related to Mockup and UI design tools as well as User Experience foundations to bring innovation to companies."/>
+				</m:VBox>
+
+				<m:VBox class="sapUiLargeMarginEnd sapUiSmallMarginBottom">
+					<m:Title class="sapUiTinyMarginBottom">
+						<m:Link text="Information Status"/>
+					</m:Title>
+					<m:ObjectStatus text="Updated" state="Success" class="sapMObjectStatusLarge"/>
+				</m:VBox>
+			</m:FlexBox>
+		</headerContent>
+
+		<sections>
+			<ObjectPageSection titleUppercase="false" id="personalSection" title="Job Experience" importance="Medium">
+				<subSections>
+					<ObjectPageSubSection id="personalSectionSS1" title="Job Experience" titleUppercase="false">
+						<blocks>
+							<personal:BlockPhoneNumber id="phone" class="sapUxAPObjectPageSubSectionAlignContent"/>
+						</blocks>
+					</ObjectPageSubSection>
+				</subSections>
+			</ObjectPageSection>
+			<ObjectPageSection titleUppercase="false" id="goalsSection" title="Skills">
+				<subSections>
+					<ObjectPageSubSection id="goalsSectionSS1" titleUppercase="false">
+						<blocks>
+							<goals:GoalsBlock id="goalsblock" class="sapUxAPObjectPageSubSectionAlignContent"/>
+						</blocks>
+					</ObjectPageSubSection>
+				</subSections>
+			</ObjectPageSection>
+
+
+			<ObjectPageSection titleUppercase="false" id="employmentSection" title="Courses and Certifications">
+				<subSections>
+					<ObjectPageSubSection id="employmentSectionSS1" title="Courses and Certifications" titleUppercase="false">
+						<blocks>
+							<employment:BlockJobInfoPart1 id="jobinfopart1" class="sapUxAPObjectPageSubSectionAlignContent"/>
+						</blocks>
+					</ObjectPageSubSection>
+				</subSections>
+			</ObjectPageSection>
+		</sections>
+	</ObjectPageLayout>
+</mvc:View>

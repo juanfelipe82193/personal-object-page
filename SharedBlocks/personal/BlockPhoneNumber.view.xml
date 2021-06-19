@@ -1,0 +1,44 @@
+<mvc:View 
+	xmlns:commons="sap.suite.ui.commons"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:forms="sap.ui.layout.form"
+	xmlns:core="sap.ui.core"
+	xmlns="sap.m">
+	<Title text="Timeline" class="sapUiSmallMarginBegin" titleStyle="Auto"/>
+	<FlexBox>
+		<commons:Timeline
+			axisOrientation="Vertical"
+			enableBusyIndicator="true"
+			enableScroll="false"
+			showSearch="false"
+			showHeaderBar="false"
+			showItemFilter="false"
+			showSort="false"
+			width="370px"
+			sortOldestFirst="true">
+
+			<commons:content>
+			<commons:TimelineItem 
+				title="Application Specialist"
+				dateTime="(1) LafargeHolcim | Aug 2020 to Present | Medellin, CO"
+				text="SAP PY, PT, PA and OM support for LafargeHolcim Northamerica region. SAP HCM customizing according to Business requirements. Change management and Incident support through ServiceNow. Create and maintain documentation using Confluence. Keep team operations and project progress in Jira by adopting Agile methodologies"
+				icon="sap-icon://date-time"/>	
+			<commons:TimelineItem 
+				title="Senior QAT SAP Payroll Specialist"
+				dateTime="(2) Scotiabank | Jan 2020 to Aug 2020 | Bogota, CO"
+				text="SAP Payroll testing support for Scotiabank Canada. Test script and planning elaboration according to Business requirements. Maintain data accuracy in testing environments. Create and maintain documentation in HP ALM. Collaborate in project progress by using Jira Kanban board"
+				icon="sap-icon://date-time"/>
+			<commons:TimelineItem 
+				title="SAP Functional Consultant"
+				dateTime="(3) Deloitte | Oct 2018 to Jan 2020 | Bogota, CO"
+				text="Level 3 ticket support for the Deloitte global staffing Web and Mobile App (STAFFIT). Requirement definition for new application releases (Use Stories and Bugs), Functional Unit Testing and UAT follow up process. Design and implementation of business solutions (Functional specifications and configuration). Lead the rollout of STAFFIT on Deloitte's new Member Firms (Wave 7, 8 and 9). Leading the functional team for the new and enhanced Mobile application project"
+				icon="sap-icon://date-time"/>
+			<commons:TimelineItem 
+				title="Software Quality Assurance Tester"
+				dateTime="(4) Deloitte | Nov 2017 to Oct 2018 | Bogota, CO"
+				text="Develop and implement Test Plans, run integration Test Cycles, Regression or Functional Tests, User Aceptance Testing and Compatibility Testing through virtual machines. HPE UFT Test Script automation, data validation backend vs frontend and Mobile testing. Tracking project task and progress by using Microsoft VSTS"
+				icon="sap-icon://date-time"/>
+			</commons:content>
+		</commons:Timeline>
+	</FlexBox>
+</mvc:View>
