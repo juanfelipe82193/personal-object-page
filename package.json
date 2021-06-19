@@ -1,0 +1,23 @@
+{
+  "name": "sap.uxap.sample.ObjectPageWithLinksAndObjectStatus",
+  "version": "1.0.0",
+  "author": "SAP SE",
+  "description": "Sample: Object Page Header with Links, Rating Indicator, and Object Status",
+  "scripts": {
+    "start": "ui5 serve",
+    "build": "ui5 build",
+    "deploy": "gh-pages -d dist"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "homepage": "https://juanfelipe82193.github.io/personal-object-page",
+  "dependencies": {
+    "@openui5/sap.m": "^1",
+    "@openui5/sap.uxap": "^1",
+    "@openui5/themelib_sap_fiori_3": "^1",
+    "gh-pages": "^1.1.0"
+  },
+  "devDependencies": {
+    "@ui5/cli": "^2.0.0"
+  }
+}

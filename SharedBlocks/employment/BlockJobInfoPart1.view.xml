@@ -1,0 +1,91 @@
+<mvc:View 
+	xmlns:mvc="sap.ui.core.mvc" 
+	xmlns:forms="sap.ui.layout.form" 
+	xmlns="sap.m">
+	<Title text="Table" titleStyle="Auto" class="sapUiSmallMarginBeginEnd"/>
+	<Table id="coursesTable" width="auto" class="sapUiTinyMarginBeginEnd">
+		<columns>
+			<Column width="auto">
+				<Text text="Name"/>
+			</Column>
+			<Column width="auto">
+				<Text text="School"/>
+			</Column>
+			<Column width="auto">
+				<Text text="Progress"/>
+			</Column>
+		</columns>
+		<items>
+			<ColumnListItem>
+				<cells>
+					<Text text="Developing and Extending SAP Fiori Elements Apps"/>
+					<Text text="openSAP"/>
+					<ProgressIndicator 
+						displayValue="30%"
+						percentValue="30"
+						state="Warning"/>
+				</cells>
+			</ColumnListItem>
+			<ColumnListItem>
+				<cells>
+					<Text text="SAP Fiori Overview - Design, Develop and Deploy"/>
+					<Text text="openSAP | Issued Jun 2020"/>
+					<ProgressIndicator 
+						displayValue="100%"
+						percentValue="100"
+						state="Success"/>
+				</cells>
+			</ColumnListItem>
+			<ColumnListItem>
+				<cells>
+					<Text text="Complete JavaScript Course 2020"/>
+					<Text text="Udemy | Issued Apr 2020"/>
+					<ProgressIndicator 
+						displayValue="100%"
+						percentValue="100"
+						state="Success"/>
+				</cells>
+			</ColumnListItem>
+			<ColumnListItem>
+				<cells>
+					<Text text="UI Development with SAPUI5"/>
+					<Text text="SAP | Issued Oct 2019"/>
+					<ProgressIndicator 
+						displayValue="100%"
+						percentValue="100"
+						state="Success"/>
+				</cells>
+			</ColumnListItem>
+			<ColumnListItem>
+				<cells>
+					<Text text="SAP User Experience Fundamentals"/>
+					<Text text="SAP | Issued Aug 2019"/>
+					<ProgressIndicator 
+						displayValue="100%"
+						percentValue="100"
+						state="Success"/>
+				</cells>
+			</ColumnListItem>
+			<ColumnListItem>
+				<cells>
+					<Text text="SAP HCM Functional Consultant Advanced Level"/>
+					<Text text="CVOSOFT | Issued Dec 2018"/>
+					<ProgressIndicator 
+						displayValue="100%"
+						percentValue="100"
+						state="Success"/>
+				</cells>
+			</ColumnListItem>
+			<ColumnListItem>
+				<cells>
+					<Text text="SAP HCM Consultant Beginner Level"/>
+					<Text text="CVOSOFT | Issued Aug 2018"/>
+					<ProgressIndicator 
+						displayValue="100%"
+						percentValue="100"
+						state="Success"/>
+				</cells>
+			</ColumnListItem>
+		</items>
+	</Table>
+</mvc:View>

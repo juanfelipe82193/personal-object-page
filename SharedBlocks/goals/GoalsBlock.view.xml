@@ -1,0 +1,101 @@
+<mvc:View 
+	xmlns:mvc="sap.ui.core.mvc" 
+	xmlns:core="sap.ui.core"
+	xmlns:layout="sap.ui.layout"
+	xmlns:forms="sap.ui.layout.form" 
+	xmlns="sap.m"
+	xmlns:microchart="sap.suite.ui.microchart">
+	<Title text="Table" class="sapUiSmallMarginBegin" titleStyle="Auto"/>
+	<Table id="skillsTable" width="350px" class="sapUiSmallMarginBeginEnd">
+		<columns>
+			<Column width="auto">
+				<Text text="Skill Description"/>
+			</Column>
+			<Column width="auto">
+				<Text text="Skill Percentage"/>
+			</Column>
+		</columns>
+		<items>
+			<ColumnListItem>
+				<cells>
+					<Text text="SAP HCM"/>
+					<microchart:RadialMicroChart 
+						size="Responsive"
+						height="18px"
+						percentage="100%"
+						valueColor="Good"/>
+				</cells>
+			</ColumnListItem>
+			<ColumnListItem>
+				<cells>
+					<Text text="SAP MRS"/>
+					<microchart:RadialMicroChart 
+						size="Responsive"
+						height="18px"
+						percentage="60%"
+						valueColor="Critical"/>
+				</cells>
+			</ColumnListItem>
+			<ColumnListItem>
+				<cells>
+					<Text text="UX/UI Design"/>
+					<microchart:RadialMicroChart 
+						size="Responsive"
+						height="18px"
+						percentage="80%"
+						valueColor="Good"/>
+				</cells>
+			</ColumnListItem>
+			<ColumnListItem>
+				<cells>
+					<Text text="SAP Implementation"/>
+					<microchart:RadialMicroChart 
+						size="Responsive"
+						height="18px"
+						percentage="80%"
+						valueColor="Good"/>
+				</cells>
+			</ColumnListItem>
+			<ColumnListItem>
+				<cells>
+					<Text text="Scrum/Kanban"/>
+					<microchart:RadialMicroChart 
+						size="Responsive"
+						height="18px"
+						percentage="70%"
+						valueColor="Good"/>
+				</cells>
+			</ColumnListItem>
+			<ColumnListItem>
+				<cells>
+					<Text text="English"/>
+					<microchart:RadialMicroChart 
+						size="Responsive"
+						height="18px"
+						percentage="90%"
+						valueColor="Good"/>
+				</cells>
+			</ColumnListItem>
+			<ColumnListItem>
+				<cells>
+					<Text text="Frontend Dev"/>
+					<microchart:RadialMicroChart 
+						size="Responsive"
+						height="18px"
+						percentage="50%"
+						valueColor="Critical"/>
+				</cells>
+			</ColumnListItem>
+			<ColumnListItem>
+				<cells>
+					<Text text="SAPUI5/SAP Fiori"/>
+					<microchart:RadialMicroChart 
+						size="Responsive"
+						height="18px"
+						percentage="60%"
+						valueColor="Critical"/>
+				</cells>
+			</ColumnListItem>
+		</items>
+	</Table>
+</mvc:View>
